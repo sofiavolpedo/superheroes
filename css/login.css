@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Roboto;
+}
+.primerEncabezado{
+    background-color: #1CD1B0;
+    padding-left: 30px;
+    color: black;
+    font-size: 15px;
+    width: 100vw;
+}
+.segundoEncabezado{
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+    color: white;
+    width: 100vw;
+    padding-left: 30px;
+}
+.nombrePadding{
+    padding-left: 20px;
+    font-size: 30px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 100vw;
+}
+.contenedorHijo{
+    width: fit-content;
+}
+h1{
+    color: #333333;;
+    font-size: 72px;
+    align-self: flex-start;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.usuario{
+    width: 620px;
+    height: 60px;
+    border: 1.53407px solid #000000;
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.usuario::placeholder {
+    color:black;
+}
+.contraseña{
+    width: 620px;
+    height: 60px;
+    border: 1.53407px solid #000000;
+    padding-left: 15px;
+}
+.contraseña::placeholder {
+    color:black;
+}
+.boton{
+    margin-top: 40px;
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    height: 53.79px;
+    font-size: 24px;
+    border: none;
+}
+.botonEntrar{
+    text-decoration: none;
+    color: black;
+}
+.registro{
+    display: flex;
+    justify-content: center;
+}
+.cuenta{
+    color: #00669F;
+    font-size: 21.4769px;
+    padding-top: 15px;
+}
+.registrarme{
+    padding-left: 10px;
+    padding-top: 15px;
+    color: black;
+    font-size: 21.4769px;
+    text-decoration: none;
+}
+footer{
+    display: flex;
+    height: 61px;
+    color: white;
+    background-color: #00669F;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+@media (max-width:400px){
+    .usuario{
+        width: 300px;
+    }
+    .contraseña{
+        width: 300px;
+    }
+    .boton{
+        width: 150px;
+        align-self: center;
+    }
+    .registro{
+        flex-direction: column;
+        align-items:center;
+    }
+}
+@media (min-width:401px) and (max-width:700px){
+    .usuario{
+        width: 80vw;
+    }
+    .contraseña{
+        width: 80vw;
+    }
+    .boton{
+        width: 70vw;
+        align-self: center;
+    }
+    .registro{
+        flex-direction: column;
+        align-items:center;
+    }
+}
